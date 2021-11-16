@@ -3,8 +3,8 @@ require_once('credenciales.php');
 $mysqli = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_DATABASE);
 $resultado='';
 if($mysqli->connect_errno){
-echo 'error en la conexion';
-exit;
+	echo 'error en la conexion1 '.$mysqli->connect_error;
+	exit;
 }
 function  consulta(){
 	global $mysqli, $resultado;
